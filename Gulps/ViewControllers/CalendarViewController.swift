@@ -23,14 +23,6 @@ class CalendarViewController: UIViewController {
   
   @IBOutlet weak var addButton: UIButton!
   
-  lazy var actionSheet: AHKActionSheet = {
-    var actionSheet = AHKActionSheet(title: NSLocalizedString("portion.add", comment: ""))
-    actionSheet?.addButton(withTitle: NSLocalizedString("gulp.small", comment: ""), type: .default) { _ in
-      self.addExtraGulp(ofSize: .small)
-    }
-    return actionSheet!
-  }()
-  
   var quantityLabelStartingConstant = 0.0
   var daysLabelStartingConstant = 0.0
   var shareButtonStartingConstant = 0.0
@@ -92,7 +84,7 @@ class CalendarViewController: UIViewController {
   }
   
   @IBAction func addExtraGulp() {
-    actionSheet.show()
+    self.addExtraGulp(ofSize: .small)
   }
   
   func addExtraGulp(ofSize: Constants.Gulp) {

@@ -16,7 +16,7 @@
 /* Calendar */
 "progress title" = "My progress";
 "share poptip" = "Here you can checkout your overall progress";
-"share text" = "Keeping healthy! I drank %d %@ of water over %d days. https://goo.gl/reTyQU @GulpsApp";
+"share text" = "Keeping healthy! I drank %d of water over %d days. https://goo.gl/reTyQU @GulpsApp";
 "unit format" = "%@ drank over";
 "goal met" = "Goal Met!";
 "portion.add" = "Add a new portion:";

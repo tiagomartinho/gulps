@@ -14,7 +14,7 @@
 /* Calendar */
 "progress title" = "Geçmiş";
 "share poptip" = "Buradan geçmişinizi kontrol edebilirsiniz";
-"share text" = "Sağlıklı kalmak için! % D gün boyunca% d% @ su içtim. https://goo.gl/reTyQU @GulpsApp";
+"share text" = "Sağlıklı kalmak için! % D gün boyunca% d su içtim. https://goo.gl/reTyQU @GulpsApp";
 "unit format" = "%@ Limitin üzerinde içtin";
 "goal met" = "Hedef başarıldı!";
 

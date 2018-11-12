@@ -16,7 +16,7 @@
 /* Calendar */
 "progress title" = "Мой прогресс";
 "share poptip" = "Здесь можете провериить свой общий прогресс";
-"share text" = "Оставайтесь здоровыми! Я выпиил(а) %d %@ воды в течение %d дней. https://goo.gl/reTyQU @GulpsApp";
+"share text" = "Оставайтесь здоровыми! Я выпиил(а) %d воды в течение %d дней. https://goo.gl/reTyQU @GulpsApp";
 "unit format" = "%@ выпито";
 "goal met" = "Цель достигнута!";
 "portion.add" = "Добавь новую порцию:";
