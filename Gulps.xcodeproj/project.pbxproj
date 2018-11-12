@@ -34,7 +34,6 @@
 		655BE8C81BF6558E003232A8 /* UINavigationController-StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655BE8C71BF6558E003232A8 /* UINavigationController-StatusBar.swift */; };
 		6591D8C61AF2684A0069E198 /* DrinkViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6591D8C51AF2684A0069E198 /* DrinkViewControllerTests.swift */; };
 		65C6AA5C1BF4AD3200BB80CF /* WatchConnectivityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C6AA5B1BF4AD3200BB80CF /* WatchConnectivityHelper.swift */; };
-		65C92DA51BB1648C00E2DFE7 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C92DA41BB1648C00E2DFE7 /* HealthKit.framework */; };
 		65C92DA71BB164D100E2DFE7 /* HealthKitHealper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C92DA61BB164D100E2DFE7 /* HealthKitHealper.swift */; };
 		65E94C6C1BBC13B400A65B30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65E94C6A1BBC13B400A65B30 /* InfoPlist.strings */; };
 		65E94C6E1BBC13BF00A65B30 /* Gulps.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 6537A8481AF24D2000EC16E9 /* Gulps.entitlements */; };
@@ -133,7 +132,6 @@
 		655BE8C71BF6558E003232A8 /* UINavigationController-StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController-StatusBar.swift"; sourceTree = "<group>"; };
 		6591D8C51AF2684A0069E198 /* DrinkViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkViewControllerTests.swift; sourceTree = "<group>"; };
 		65C6AA5B1BF4AD3200BB80CF /* WatchConnectivityHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchConnectivityHelper.swift; sourceTree = "<group>"; };
-		65C92DA41BB1648C00E2DFE7 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		65C92DA61BB164D100E2DFE7 /* HealthKitHealper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitHealper.swift; sourceTree = "<group>"; };
 		65E94C6B1BBC13B400A65B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65E94C6D1BBC13BF00A65B30 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -172,7 +170,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65C92DA51BB1648C00E2DFE7 /* HealthKit.framework in Frameworks */,
 				04A25CC003619ECD3665587B /* Pods_Gulps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,7 +334,6 @@
 		65F44C451AF24B770093A3E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				65C92DA41BB1648C00E2DFE7 /* HealthKit.framework */,
 				65F44C461AF24B770093A3E9 /* NotificationCenter.framework */,
 				826C81EBAB7F5F01AACA02FD /* Pods_Gulps.framework */,
 				58E28A47EF2AA14E880CD719 /* Pods_GulpsTests.framework */,
@@ -427,10 +423,10 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.HealthKit = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -877,7 +873,6 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Gulps/Gulps.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = H72GR44F4M;
@@ -903,7 +898,6 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Gulps/Gulps.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = H72GR44F4M;
