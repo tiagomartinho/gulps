@@ -12,8 +12,6 @@ class MockUserDefaults: UserDefaults {
     switch defaultName {
     case Constants.Gulp.small.key():
       return 0.1
-    case Constants.Gulp.big.key():
-      return 0.2
     case Constants.Gulp.goal.key():
       return 1
     default:

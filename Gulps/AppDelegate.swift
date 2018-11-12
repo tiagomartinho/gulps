@@ -5,10 +5,8 @@ import Realm
 class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   var realmNotification: RLMNotificationToken?
-  let watchConnectivityHelper = WatchConnectivityHelper()
-  
+
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    
     setupAppearance()
     Settings.registerDefaults()
     loadMainInterface()
@@ -65,7 +63,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
    Present the main interface
    */
   func loadMainInterface() {
-    realmNotification = watchConnectivityHelper.setupWatchUpdates()
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     if let controller = storyboard.instantiateInitialViewController() {
       self.window?.rootViewController = controller

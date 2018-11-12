@@ -73,9 +73,6 @@ class NotificationHelper {
 
   class func handleNotification(_ notification: UILocalNotification, identifier: String) {
     if (notification.category == "GULP_CATEGORY") {
-      if (identifier == "BIG_ACTION") {
-        NotificationHelper.addGulp(Constants.Gulp.big.key())
-      }
       if (identifier == "SMALL_ACTION") {
         NotificationHelper.addGulp(Constants.Gulp.small.key())
       }

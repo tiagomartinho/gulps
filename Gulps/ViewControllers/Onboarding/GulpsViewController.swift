@@ -43,7 +43,6 @@ class GulpsViewController: OnboardingViewController, UITextFieldDelegate {
     }
 
     self.userDefaults.set(small, forKey: Constants.Gulp.small.key())
-    self.userDefaults.set(big, forKey: Constants.Gulp.big.key())
     self.userDefaults.synchronize()
   }
 
@@ -59,13 +58,6 @@ class GulpsViewController: OnboardingViewController, UITextFieldDelegate {
     let numberFormatter = NumberFormatter()
     numberFormatter.numberStyle = .decimal
     self.smallGulpText.text = numberFormatter.string(for: self.userDefaults.double(forKey: Constants.Gulp.small.key()))
-    self.bigGulpText.text = numberFormatter.string(for: self.userDefaults.double(forKey: Constants.Gulp.big.key()))
-    let unit = Constants.UnitsOfMeasure(rawValue: self.userDefaults.integer(forKey: Constants.General.unitOfMeasure.key()))
-
-    if let unit = unit {
-      self.smallSuffixLabel.text = unit.suffixForUnitOfMeasure()
-      self.bigSuffixLabel.text = unit.suffixForUnitOfMeasure()
-    }
   }
 
   override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {

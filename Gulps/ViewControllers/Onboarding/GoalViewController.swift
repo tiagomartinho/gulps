@@ -46,10 +46,5 @@ class GoalViewController: OnboardingViewController, UITextFieldDelegate {
     let numberFormatter = NumberFormatter()
     numberFormatter.numberStyle = .decimal
     self.goalTextField.text = numberFormatter.string(for: self.userDefaults.double(forKey: Constants.Gulp.goal.key()))
-    let unit = Constants.UnitsOfMeasure(rawValue: self.userDefaults.integer(forKey: Constants.General.unitOfMeasure.key()))
-
-    if let unit = unit {
-      self.goalSuffixLabel.text = unit.suffixForUnitOfMeasure()
-    }
   }
 }

@@ -74,7 +74,6 @@ class NotificationViewController: OnboardingViewController, UIActionSheetDelegat
   }
 
   @IBAction func doneAction() {
-    userDefaults.set(true, forKey: Constants.General.onboardingShown.key())
     NotificationHelper.unscheduleNotifications()
     if notificationSwitch.isOn {
       NotificationHelper.askPermission()

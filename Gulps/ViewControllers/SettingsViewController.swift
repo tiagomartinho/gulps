@@ -133,9 +133,6 @@ class SettingsViewController: UITableViewController, UIAlertViewDelegate, UIText
     let number = numberFormatter.number(from: text) as? Double
     userDefaults.set(number ?? 0.0, forKey: key)
     userDefaults.synchronize()
-
-    // Update the settings on the watch
-    WatchConnectivityHelper().sendWatchData()
   }
 
   func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {

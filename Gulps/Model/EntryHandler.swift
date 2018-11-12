@@ -86,7 +86,6 @@ open class EntryHandler: NSObject {
    - parameter date: The sample date
    */
   open func addGulp(_ quantity: Double, date: Date?) {
-    HealthKitHelper.sharedHelper.saveSample(quantity, date: date)
     var entry: Entry?
     if let date = date {
       entry = entryForDate(date)
@@ -105,7 +104,6 @@ open class EntryHandler: NSObject {
    Removes the last portion to the current entry. If available, the sample is removed in HealthKit as well
    */
   open func removeLastGulp() {
-    HealthKitHelper.sharedHelper.removeLastSample()
     let entry = currentEntry()
     if let gulp = entry.gulps.last {
       try! realm.write {

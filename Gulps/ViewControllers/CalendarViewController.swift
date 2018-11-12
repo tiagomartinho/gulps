@@ -28,9 +28,6 @@ class CalendarViewController: UIViewController {
     actionSheet?.addButton(withTitle: NSLocalizedString("gulp.small", comment: ""), type: .default) { _ in
       self.addExtraGulp(ofSize: .small)
     }
-    actionSheet?.addButton(withTitle: NSLocalizedString("gulp.big", comment: ""), type: .default) { _ in
-      self.addExtraGulp(ofSize: .big)
-    }
     return actionSheet!
   }()
   
@@ -112,7 +109,7 @@ class CalendarViewController: UIViewController {
   @IBAction func shareAction(_ sender: AnyObject) {
     let quantity = Int(EntryHandler.sharedHandler.overallQuantity())
     let days = EntryHandler.sharedHandler.daysTracked()
-    let text = String(format: NSLocalizedString("share text", comment: ""), quantity, unitName(), days)
+    let text = String(format: NSLocalizedString("share text", comment: ""), quantity, days)
     let activityController = UIActivityViewController(activityItems: [text], applicationActivities: nil)
     activityController.excludedActivityTypes = shareExclusions
     present(activityController, animated: true, completion: nil)
@@ -185,14 +182,6 @@ extension CalendarViewController {
   func updateStats() {
     daysCountLabel.countFromZero(to: CGFloat(EntryHandler.sharedHandler.daysTracked()))
     quantityLabel.countFromZero(to: CGFloat(EntryHandler.sharedHandler.overallQuantity()))
-    measureLabel.text = String(format: NSLocalizedString("unit format", comment: ""), unitName())
-  }
-  
-  func unitName() -> String {
-    if let unit = Constants.UnitsOfMeasure(rawValue: userDefaults.integer(forKey: Constants.General.unitOfMeasure.key())) {
-      return unit.nameForUnitOfMeasure()
-    }
-    return ""
   }
   
   func dateLabelString(_ date: Date = Date()) -> String {
