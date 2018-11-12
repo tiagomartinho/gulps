@@ -13,15 +13,6 @@ open class EntryHandler: NSObject {
    Realm is initialized lazily, using the group bundle identifier.
    */
   open lazy var realm: Realm = {
-    guard let directory: URL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.\(Constants.bundle())") else {
-      fatalError("Unable to setup Realm. Make sure to setup your app group in the developer portal")
-    }
-
-    let realmPath = directory.appendingPathComponent("db.realm")
-    var config = Realm.Configuration()
-    config.fileURL = realmPath
-    Realm.Configuration.defaultConfiguration = config
-
     return try! Realm()
   }()
 
