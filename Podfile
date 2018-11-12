@@ -20,10 +20,6 @@ target 'Gulps' do
   pod 'Reveal-SDK', :configurations => ['Debug']
 end
 
-target 'GulpsToday' do
-  pod 'RealmSwift'
-end
-
 target 'GulpsTests' do
   common_pods
   pod 'Nimble'
