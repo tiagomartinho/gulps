@@ -1,9 +1,8 @@
 import UIKit
-import WatchConnectivity
 import Realm
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   var realmNotification: RLMNotificationToken?
   let watchConnectivityHelper = WatchConnectivityHelper()
@@ -12,7 +11,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     setupAppearance()
     Settings.registerDefaults()
-    watchConnectivityHelper.setupWatchConnectivity(delegate: self)
 
     let userDefaults = UserDefaults.groupUserDefaults()
     if (!userDefaults.bool(forKey: Constants.General.onboardingShown.key())) {
@@ -95,46 +93,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
       NotificationHelper.registerNotifications()
     }
   }
-
-  // MARK: - 3D Touch shortcut
-
-  enum ShortcutType: String {
-    case Big = "it.fancypixel.gulps.big"
-    case Small = "it.fancypixel.gulps.small"
-  }
-
-  func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
-    handleShortcutItem(shortcutItem)
-    completionHandler(true)
-  }
-
-  func handleShortcutItem(_ item: UIApplicationShortcutItem) {
-    if let type = ShortcutType(rawValue: item.type) {
-      if (type == .Small) {
-        EntryHandler.sharedHandler.addGulp(UserDefaults.groupUserDefaults().double(forKey: Constants.Gulp.small.key()))
-      } else if (type == .Big) {
-        EntryHandler.sharedHandler.addGulp(UserDefaults.groupUserDefaults().double(forKey: Constants.Gulp.big.key()))
-      }
-    }
-  }
-
-  func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
-    watchConnectivityHelper.session(session, didReceiveApplicationContext: applicationContext)
-  }
-
-  @available(iOS 9.3, *)
-  public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-
-  }
-
-  @available(iOS 9.3, *)
-  public func sessionDidBecomeInactive(_ session: WCSession) {
-
-  }
-
-  @available(iOS 9.3, *)
-  public func sessionDidDeactivate(_ session: WCSession) {
-
-  }
-
 }
