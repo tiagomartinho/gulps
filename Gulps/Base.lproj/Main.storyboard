@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Avenir.ttc">
-            <string>Avenir-Book</string>
-        </array>
         <array key="KaushanScript.ttf">
             <string>KaushanScript-Regular</string>
         </array>
@@ -57,7 +52,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSl-zs-C7Z" userLabel="Small Button">
-                                <rect key="frame" x="153" y="454" width="70" height="70"/>
+                                <rect key="frame" x="152.5" y="454" width="70" height="70"/>
                                 <color key="backgroundColor" red="0.21960784310000001" green="0.49019607840000001" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="3RS-1m-Fjb"/>
@@ -76,7 +71,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5a-2l-qvB" userLabel="Large Button">
-                                <rect key="frame" x="153" y="454" width="70" height="70"/>
+                                <rect key="frame" x="152.5" y="454" width="70" height="70"/>
                                 <color key="backgroundColor" red="0.21960784310000001" green="0.49019607840000001" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="Njd-jj-cNp"/>
@@ -95,7 +90,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fW6-sm-t8g" userLabel="Add Button">
-                                <rect key="frame" x="153" y="454" width="70" height="70"/>
+                                <rect key="frame" x="152.5" y="454" width="70" height="70"/>
                                 <color key="backgroundColor" red="0.2196078431372549" green="0.49019607843137253" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Yl3-mS-wuG"/>
@@ -183,7 +178,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <customObject id="YJs-c5-Aop" customClass="EntryHandler" customModule="Gulps"/>
             </objects>
-            <point key="canvasLocation" x="833" y="-656"/>
+            <point key="canvasLocation" x="1332.8" y="-590.10494752623697"/>
         </scene>
         <!--Feedback View Controller-->
         <scene sceneID="SYy-UA-vxC">
@@ -198,13 +193,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Way to go!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyj-Gr-Ph8">
-                                <rect key="frame" x="16" y="30" width="343" height="70"/>
+                                <rect key="frame" x="16" y="30" width="343" height="56"/>
                                 <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="48"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2X-D7-DBk">
-                                <rect key="frame" x="16" y="120" width="343" height="66"/>
+                                <rect key="frame" x="16" y="106" width="343" height="66"/>
                                 <string key="text">Good job keeping healthy! 
 By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
@@ -212,7 +207,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEc-xW-5dW">
-                                <rect key="frame" x="137.5" y="221" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="207" width="100" height="100"/>
                                 <state key="normal" image="smile">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -221,7 +216,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xa4-EW-hWa">
-                                <rect key="frame" x="137.5" y="351" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="337" width="100" height="100"/>
                                 <state key="normal" image="sad">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -248,7 +243,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JK4-jm-Ngh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1688" y="-656"/>
+            <point key="canvasLocation" x="2700.8000000000002" y="-590.10494752623697"/>
         </scene>
         <!--Feedback View Controller-->
         <scene sceneID="8V4-Ch-Z4J">
@@ -263,13 +258,13 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yay!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ee7-af-1yT">
-                                <rect key="frame" x="16" y="40" width="343" height="70"/>
+                                <rect key="frame" x="16" y="40" width="343" height="56"/>
                                 <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="48"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How about rating Gulps on the AppStore? We always appreciate the feedback!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9l-6a-fbg">
-                                <rect key="frame" x="16" y="160" width="343" height="44"/>
+                                <rect key="frame" x="16" y="146" width="343" height="44"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -340,7 +335,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LRM-gP-bOv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2124" y="-976"/>
+            <point key="canvasLocation" x="3398.4000000000001" y="-877.9610194902549"/>
         </scene>
         <!--Feedback View Controller-->
         <scene sceneID="fAg-H6-Cxt">
@@ -428,7 +423,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Mh-cU-OP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2124" y="-321"/>
+            <point key="canvasLocation" x="3398.4000000000001" y="-288.75562218890559"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -450,7 +445,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-34" y="0.0"/>
+            <point key="canvasLocation" x="-54.399999999999999" y="0.0"/>
         </scene>
         <!--Drink-->
         <scene sceneID="yhS-QJ-Xyb">
@@ -459,6 +454,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                     <tabBarItem key="tabBarItem" title="Drink" image="drink-icon" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="U4a-LJ-b69">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.21960784310000001" green="0.49019607840000001" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -469,7 +465,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6F6-ZI-off" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="400" y="-656"/>
+            <point key="canvasLocation" x="640" y="-590.10494752623697"/>
         </scene>
         <!--Calendar View Controller-->
         <scene sceneID="X3R-mt-gca">
@@ -514,25 +510,25 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liters drank over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4E2-NO-CiF">
-                                <rect key="frame" x="16" y="133" width="343" height="25"/>
+                                <rect key="frame" x="16" y="115" width="343" height="20"/>
                                 <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="17"/>
                                 <color key="textColor" red="0.17367905378341675" green="0.40215393900871277" blue="0.76835298538208008" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lon-Jb-3Cm" customClass="UICountingLabel">
-                                <rect key="frame" x="16" y="40" width="343" height="93"/>
+                                <rect key="frame" x="16" y="40" width="343" height="75"/>
                                 <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="64"/>
                                 <color key="textColor" red="0.17367905378341675" green="0.40215393900871277" blue="0.76835298538208008" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="days" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpZ-Ht-zcx">
-                                <rect key="frame" x="16" y="263" width="343" height="25"/>
+                                <rect key="frame" x="16" y="245" width="343" height="20"/>
                                 <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="17"/>
                                 <color key="textColor" red="0.17367905378341675" green="0.40215393900871277" blue="0.76835298538208008" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="R2u-Oc-VLI" customClass="UICountingLabel">
-                                <rect key="frame" x="16" y="170" width="343" height="93"/>
+                                <rect key="frame" x="16" y="170" width="343" height="75"/>
                                 <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="64"/>
                                 <color key="textColor" red="0.17367905378341675" green="0.40215393900871277" blue="0.76835298538208008" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -622,7 +618,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KLz-Ir-9US" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="832.5" y="-0.5"/>
+            <point key="canvasLocation" x="1332" y="-0.44977511244377816"/>
         </scene>
         <!--My progress-->
         <scene sceneID="Yb4-kZ-eAj">
@@ -631,6 +627,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                     <tabBarItem key="tabBarItem" title="My progress" image="calendar-icon" id="1AV-yg-enX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Oty-Lr-Na6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.17367905378341675" green="0.40215393900871277" blue="0.76835298538208008" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -641,7 +638,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6iZ-BW-ALn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="400" y="0.0"/>
+            <point key="canvasLocation" x="640" y="0.0"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="f6s-sH-ozk">
@@ -652,131 +649,17 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
-                            <tableViewSection headerTitle="Settings" id="M6x-da-DQK">
+                            <tableViewSection headerTitle="Daily Goal" id="Uhu-cr-ZJf">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PreferencesCll" textLabel="mud-m1-HKI" detailTextLabel="Jwx-tY-nJI" style="IBUITableViewCellStyleValue1" id="DBP-ws-TDU">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DBP-ws-TDU" id="VCL-xm-mcn">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Unit of mesure" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mud-m1-HKI">
-                                                    <rect key="frame" x="16" y="12" width="107" height="19.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Liters" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jwx-tY-nJI">
-                                                    <rect key="frame" x="318.5" y="12" width="40.5" height="19.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="Portions" id="Uhu-cr-ZJf">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PreferencesCll" id="HEf-6N-tP9">
-                                        <rect key="frame" x="0.0" y="147.5" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HEf-6N-tP9" id="Tjr-vg-Hgk">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Small gulp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brt-M3-CC4">
-                                                    <rect key="frame" x="15" y="12" width="76" height="20"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0,2" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HpM-IE-rg0">
-                                                    <rect key="frame" x="245" y="0.0" width="90" height="43"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="90" id="2Oj-6B-XzV"/>
-                                                    </constraints>
-                                                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad"/>
-                                                    <connections>
-                                                        <outlet property="delegate" destination="t9K-A9-XHF" id="l30-J1-I8d"/>
-                                                    </connections>
-                                                </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oz" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbd-CS-kU7">
-                                                    <rect key="frame" x="341" y="13" width="19" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="HpM-IE-rg0" secondAttribute="bottom" id="3yl-9G-Seh"/>
-                                                <constraint firstItem="HpM-IE-rg0" firstAttribute="top" secondItem="Tjr-vg-Hgk" secondAttribute="top" id="Bm0-a7-1Cu"/>
-                                                <constraint firstItem="Brt-M3-CC4" firstAttribute="leading" secondItem="Tjr-vg-Hgk" secondAttribute="leading" constant="15" id="C3k-9k-JAL"/>
-                                                <constraint firstAttribute="trailing" secondItem="HpM-IE-rg0" secondAttribute="trailing" constant="40" id="H6C-32-egH"/>
-                                                <constraint firstAttribute="trailing" secondItem="nbd-CS-kU7" secondAttribute="trailing" constant="15" id="K1f-2Q-i8b"/>
-                                                <constraint firstAttribute="centerY" secondItem="Brt-M3-CC4" secondAttribute="centerY" id="YJ4-qp-2Ol"/>
-                                                <constraint firstAttribute="centerY" secondItem="nbd-CS-kU7" secondAttribute="centerY" id="dAZ-Z8-Re2"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PreferencesCll" id="XVN-Hr-Cdk">
-                                        <rect key="frame" x="0.0" y="191.5" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XVN-Hr-Cdk" id="Y7x-zR-Q8Y">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0,5" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SBF-ug-rBd">
-                                                    <rect key="frame" x="245" y="0.0" width="90" height="43"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="90" id="QyB-HA-EVf"/>
-                                                    </constraints>
-                                                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad"/>
-                                                    <connections>
-                                                        <outlet property="delegate" destination="t9K-A9-XHF" id="JVg-2D-yLh"/>
-                                                    </connections>
-                                                </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big gulp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCk-VT-Gki">
-                                                    <rect key="frame" x="15" y="12" width="60" height="20"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oz" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVh-z0-hYc">
-                                                    <rect key="frame" x="341" y="13" width="19" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="centerY" secondItem="RVh-z0-hYc" secondAttribute="centerY" id="2NS-CN-pBL"/>
-                                                <constraint firstAttribute="bottom" secondItem="SBF-ug-rBd" secondAttribute="bottom" id="M0M-Ba-pav"/>
-                                                <constraint firstAttribute="trailing" secondItem="SBF-ug-rBd" secondAttribute="trailing" constant="40" id="PcA-66-gpd"/>
-                                                <constraint firstItem="SBF-ug-rBd" firstAttribute="top" secondItem="Y7x-zR-Q8Y" secondAttribute="top" id="Sgw-ux-ZIN"/>
-                                                <constraint firstAttribute="centerY" secondItem="yCk-VT-Gki" secondAttribute="centerY" id="qd4-tl-pSf"/>
-                                                <constraint firstItem="yCk-VT-Gki" firstAttribute="leading" secondItem="Y7x-zR-Q8Y" secondAttribute="leading" constant="15" id="tFT-5L-gjV"/>
-                                                <constraint firstAttribute="trailing" secondItem="RVh-z0-hYc" secondAttribute="trailing" constant="15" id="yq4-nu-LI0"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PreferencesCll" id="Q2W-7p-buv">
-                                        <rect key="frame" x="0.0" y="235.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q2W-7p-buv" id="MoA-It-qj5">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Heo-vz-8M3">
-                                                    <rect key="frame" x="245" y="0.0" width="90" height="43"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="6" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Heo-vz-8M3">
+                                                    <rect key="frame" x="245" y="0.0" width="90" height="43.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="90" id="PIP-Vv-8Xt"/>
                                                     </constraints>
@@ -787,27 +670,19 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                                         <outlet property="delegate" destination="t9K-A9-XHF" id="6px-pJ-ZE6"/>
                                                     </connections>
                                                 </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily goal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pt1-x1-O82">
-                                                    <rect key="frame" x="15" y="12" width="71" height="20"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repetitions per day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pt1-x1-O82">
+                                                    <rect key="frame" x="15" y="12" width="140.5" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oz" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DT8-cB-ShB">
-                                                    <rect key="frame" x="341" y="13" width="19" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="centerY" secondItem="DT8-cB-ShB" secondAttribute="centerY" id="4bj-BO-77K"/>
                                                 <constraint firstItem="Heo-vz-8M3" firstAttribute="top" secondItem="MoA-It-qj5" secondAttribute="top" id="GlT-wb-nDB"/>
                                                 <constraint firstAttribute="trailing" secondItem="Heo-vz-8M3" secondAttribute="trailing" constant="40" id="Gny-Ph-2o6"/>
                                                 <constraint firstItem="pt1-x1-O82" firstAttribute="leading" secondItem="MoA-It-qj5" secondAttribute="leading" constant="15" id="Myf-TB-EyU"/>
                                                 <constraint firstAttribute="bottom" secondItem="Heo-vz-8M3" secondAttribute="bottom" id="dDi-Pa-YSj"/>
                                                 <constraint firstAttribute="centerY" secondItem="pt1-x1-O82" secondAttribute="centerY" id="gg3-4o-Nwb"/>
-                                                <constraint firstAttribute="trailing" secondItem="DT8-cB-ShB" secondAttribute="trailing" constant="15" id="wt0-F4-OPv"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -816,20 +691,20 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                             <tableViewSection headerTitle="Notifications" id="Cqk-U1-F6w">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PreferencesCll" id="Ii4-wt-fc6">
-                                        <rect key="frame" x="0.0" y="327.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="147.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ii4-wt-fc6" id="1Hn-44-t70">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind me to drink" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIg-ci-rnk">
-                                                    <rect key="frame" x="15" y="12" width="141" height="20"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIg-ci-rnk">
+                                                    <rect key="frame" x="15" y="12" width="82" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mua-Mo-rXC">
-                                                    <rect key="frame" x="318" y="6" width="51" height="31"/>
+                                                    <rect key="frame" x="318" y="6" width="51" height="31.5"/>
                                                     <connections>
                                                         <action selector="reminderAction:" destination="t9K-A9-XHF" eventType="valueChanged" id="zyb-e2-1zL"/>
                                                     </connections>
@@ -846,7 +721,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PreferencesCll" textLabel="Pnc-7E-Kee" detailTextLabel="aBp-Ni-lCc" style="IBUITableViewCellStyleValue1" id="dxR-vc-Rwx">
-                                        <rect key="frame" x="0.0" y="371.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="191.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dxR-vc-Rwx" id="iKk-wz-AiX">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -870,7 +745,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PreferencesCll" textLabel="f3c-OV-GHw" detailTextLabel="en4-wz-CaR" style="IBUITableViewCellStyleValue1" id="sFs-MK-DDj">
-                                        <rect key="frame" x="0.0" y="415.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="235.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sFs-MK-DDj" id="9UG-1o-lam">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -894,7 +769,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PreferencesCll" textLabel="w1F-Cx-bRx" detailTextLabel="llL-4J-aC6" style="IBUITableViewCellStyleValue1" id="8v4-HN-MkF">
-                                        <rect key="frame" x="0.0" y="459.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="279.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8v4-HN-MkF" id="wVD-TQ-jfH">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -919,40 +794,6 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Apple Health" id="kL3-zV-Q1y">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PreferencesCll" id="rtu-Sv-Asn">
-                                        <rect key="frame" x="0.0" y="551.5" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rtu-Sv-Asn" id="NkK-Il-Fd3">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Export data to Health" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72o-fo-Kke">
-                                                    <rect key="frame" x="15" y="12" width="155" height="20"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fU5-mD-m8k">
-                                                    <rect key="frame" x="318" y="6" width="51" height="31"/>
-                                                    <connections>
-                                                        <action selector="healthAction:" destination="t9K-A9-XHF" eventType="valueChanged" id="QZV-Zs-eiK"/>
-                                                    </connections>
-                                                </switch>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="centerY" secondItem="72o-fo-Kke" secondAttribute="centerY" id="56z-pf-C52"/>
-                                                <constraint firstAttribute="trailing" secondItem="fU5-mD-m8k" secondAttribute="trailing" constant="8" id="LYl-JQ-1b8"/>
-                                                <constraint firstItem="fU5-mD-m8k" firstAttribute="top" secondItem="NkK-Il-Fd3" secondAttribute="top" constant="6" id="Y84-Bv-ILO"/>
-                                                <constraint firstAttribute="bottom" secondItem="fU5-mD-m8k" secondAttribute="bottom" constant="6" id="ale-m4-0UO"/>
-                                                <constraint firstItem="72o-fo-Kke" firstAttribute="leading" secondItem="NkK-Il-Fd3" secondAttribute="leading" constant="15" id="b0Q-gk-1Or"/>
-                                                <constraint firstAttribute="centerY" secondItem="fU5-mD-m8k" secondAttribute="centerY" id="c5L-Yv-pPM"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="t9K-A9-XHF" id="meK-oV-erX"/>
@@ -962,22 +803,15 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                     <navigationItem key="navigationItem" id="yM9-kq-UP2"/>
                     <connections>
                         <outlet property="dailyGoalText" destination="Heo-vz-8M3" id="lHN-ai-OMb"/>
-                        <outlet property="healthSwitch" destination="fU5-mD-m8k" id="83t-Hg-eil"/>
-                        <outlet property="largePortionText" destination="SBF-ug-rBd" id="kj7-UV-Usx"/>
                         <outlet property="notificationFromLabel" destination="aBp-Ni-lCc" id="LSm-ya-Pih"/>
                         <outlet property="notificationIntervalLabel" destination="llL-4J-aC6" id="GL4-VE-3Io"/>
                         <outlet property="notificationSwitch" destination="mua-Mo-rXC" id="Yto-mm-Dvj"/>
                         <outlet property="notificationToLabel" destination="en4-wz-CaR" id="ZYA-6k-Zzo"/>
-                        <outlet property="smallPortionText" destination="HpM-IE-rg0" id="IH6-oe-040"/>
-                        <outlet property="unitOfMesureLabel" destination="Jwx-tY-nJI" id="7bK-c8-3Za"/>
-                        <outletCollection property="uomLabels" destination="nbd-CS-kU7" collectionClass="NSMutableArray" id="yn9-xJ-SuH"/>
-                        <outletCollection property="uomLabels" destination="RVh-z0-hYc" collectionClass="NSMutableArray" id="sey-OP-a1C"/>
-                        <outletCollection property="uomLabels" destination="DT8-cB-ShB" collectionClass="NSMutableArray" id="kN2-it-PpW"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gao-yG-C7y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="833" y="718"/>
+            <point key="canvasLocation" x="1332.8" y="645.87706146926541"/>
         </scene>
         <!--Preferences-->
         <scene sceneID="N6A-EL-ShQ">
@@ -986,6 +820,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                     <tabBarItem key="tabBarItem" title="Preferences" image="settings-icon" id="BBe-Kb-DPg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="zxx-GC-h7k">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -995,7 +830,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QMS-ui-HT0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="400" y="718"/>
+            <point key="canvasLocation" x="640" y="645.87706146926541"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="icc-oL-27X">
@@ -1012,7 +847,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qyj-1I-346" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1255" y="-656"/>
+            <point key="canvasLocation" x="2008" y="-590.10494752623697"/>
         </scene>
     </scenes>
     <resources>

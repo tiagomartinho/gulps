@@ -4,16 +4,11 @@ import WatchConnectivity
 
 class SettingsViewController: UITableViewController, UIAlertViewDelegate, UITextFieldDelegate {
 
-  @IBOutlet weak var unitOfMesureLabel: UILabel!
-  @IBOutlet weak var smallPortionText: UITextField!
-  @IBOutlet weak var largePortionText: UITextField!
   @IBOutlet weak var dailyGoalText: UITextField!
   @IBOutlet weak var notificationSwitch: UISwitch!
-  @IBOutlet weak var healthSwitch: UISwitch!
   @IBOutlet weak var notificationFromLabel: UILabel!
   @IBOutlet weak var notificationToLabel: UILabel!
   @IBOutlet weak var notificationIntervalLabel: UILabel!
-  @IBOutlet var uomLabels: [UILabel]!
 
   let userDefaults = UserDefaults.groupUserDefaults()
 
@@ -26,15 +21,11 @@ class SettingsViewController: UITableViewController, UIAlertViewDelegate, UIText
   override func viewDidLoad() {
     super.viewDidLoad()
     self.title = NSLocalizedString("settings title", comment: "")
-    for element in [smallPortionText, largePortionText, dailyGoalText] {
+    for element in [dailyGoalText] {
       element?.inputAccessoryView = Globals.numericToolbar(element,
                                                           selector: #selector(UIResponder.resignFirstResponder),
                                                           barColor: .palette_main,
                                                           textColor: .white)
-    }
-
-    if WCSession.isSupported() {
-      WCSession.default.activate()
     }
   }
 
@@ -46,19 +37,7 @@ class SettingsViewController: UITableViewController, UIAlertViewDelegate, UIText
   func updateUI() {
     let numberFormatter = NumberFormatter()
     numberFormatter.numberStyle = .decimal
-    var suffix = ""
-    if let unit = Constants.UnitsOfMeasure(rawValue: userDefaults.integer(forKey: Constants.General.unitOfMeasure.key())) {
-      unitOfMesureLabel.text = unit.nameForUnitOfMeasure()
-      suffix = unit.suffixForUnitOfMeasure()
-    }
-
-    _ = uomLabels.map({$0.text = suffix})
-    largePortionText.text = numberFormatter.string(for: userDefaults.double(forKey: Constants.Gulp.big.key()))
-    smallPortionText.text = numberFormatter.string(for: userDefaults.double(forKey: Constants.Gulp.small.key()))
     dailyGoalText.text = numberFormatter.string(for: userDefaults.double(forKey: Constants.Gulp.goal.key()))
-
-    healthSwitch.isOn = userDefaults.bool(forKey: Constants.Health.on.key())
-
     notificationSwitch.isOn = userDefaults.bool(forKey: Constants.Notification.on.key())
     notificationFromLabel.text = "\(userDefaults.integer(forKey: Constants.Notification.from.key())):00"
     notificationToLabel.text = "\(userDefaults.integer(forKey: Constants.Notification.to.key())):00"
@@ -147,32 +126,24 @@ class SettingsViewController: UITableViewController, UIAlertViewDelegate, UIText
   }
 
   override func numberOfSections(in tableView: UITableView) -> Int {
-    return 4
+    return 2
   }
 
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     if (section == 0) {
       return 1
     } else if (section == 1) {
-      return 3
-    } else if (section == 2) {
       if UserDefaults.groupUserDefaults().bool(forKey: Constants.Notification.on.key()) {
         return 4
       } else {
         return 1
       }
     } else {
-      return 1
+      return 0
     }
   }
 
   func textFieldDidEndEditing(_ textField: UITextField) {
-    if (textField == smallPortionText) {
-      storeText(smallPortionText, toKey: Constants.Gulp.small.key())
-    }
-    if (textField == largePortionText) {
-      storeText(largePortionText, toKey: Constants.Gulp.big.key())
-    }
     if (textField == dailyGoalText) {
       storeText(dailyGoalText, toKey: Constants.Gulp.goal.key())
     }
