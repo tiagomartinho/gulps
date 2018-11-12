@@ -59,19 +59,5 @@ class DrinkViewControllerSpecs: QuickSpec {
         expect(subject.percentageLabel.text).to(equal("0%"))
       }
     }
-
-    describe("when a small gulp is added") {
-      it("should update the progress") {
-        subject.selectionButtonAction(subject.smallButton)
-        expect(subject.percentageLabel.text).toEventually(equal("10%"))
-      }
-    }
-
-    describe("when a big gulp is added") {
-      it("should update the progress label") {
-        subject.selectionButtonAction(subject.largeButton)
-        expect(subject.percentageLabel.text).toEventually(equal("20%"))
-      }
-    }
   }
 }

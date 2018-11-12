@@ -51,44 +51,6 @@
                                 <color key="textColor" red="0.21960784310000001" green="0.49019607840000001" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSl-zs-C7Z" userLabel="Small Button">
-                                <rect key="frame" x="152.5" y="454" width="70" height="70"/>
-                                <color key="backgroundColor" red="0.21960784310000001" green="0.49019607840000001" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="3RS-1m-Fjb"/>
-                                    <constraint firstAttribute="height" constant="70" id="poi-5r-ZNd"/>
-                                </constraints>
-                                <state key="normal" image="small-icon">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="35"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="selectionButtonAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Uak-g7-Cxp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5a-2l-qvB" userLabel="Large Button">
-                                <rect key="frame" x="152.5" y="454" width="70" height="70"/>
-                                <color key="backgroundColor" red="0.21960784310000001" green="0.49019607840000001" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="Njd-jj-cNp"/>
-                                    <constraint firstAttribute="height" constant="70" id="mE0-49-sQ9"/>
-                                </constraints>
-                                <state key="normal" image="large-icon">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="35"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="selectionButtonAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="5Lu-Gy-RKQ"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fW6-sm-t8g" userLabel="Add Button">
                                 <rect key="frame" x="152.5" y="454" width="70" height="70"/>
                                 <color key="backgroundColor" red="0.2196078431372549" green="0.49019607843137253" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -146,32 +108,25 @@
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="fW6-sm-t8g" secondAttribute="bottom" priority="999" constant="30" id="6mW-Ks-Okm"/>
                             <constraint firstAttribute="trailing" secondItem="mQX-uO-zkr" secondAttribute="trailing" constant="50" id="7kZ-5Y-T7k"/>
                             <constraint firstItem="mQX-uO-zkr" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="20" id="I7T-On-xnd"/>
-                            <constraint firstItem="v5a-2l-qvB" firstAttribute="centerY" secondItem="rSl-zs-C7Z" secondAttribute="centerY" id="OMr-uc-lE0"/>
-                            <constraint firstItem="fW6-sm-t8g" firstAttribute="centerY" secondItem="rSl-zs-C7Z" secondAttribute="centerY" id="QsQ-Rb-R1e"/>
                             <constraint firstAttribute="trailing" secondItem="uvx-n6-xp2" secondAttribute="trailing" constant="8" id="RFk-Vg-f7U"/>
                             <constraint firstItem="mEa-Xq-QB6" firstAttribute="top" secondItem="mQX-uO-zkr" secondAttribute="bottom" priority="999" constant="30" id="RhO-7v-9ug"/>
                             <constraint firstItem="mEa-Xq-QB6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="mQX-uO-zkr" secondAttribute="bottom" id="TZU-e2-bDA"/>
                             <constraint firstItem="mQX-uO-zkr" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="50" id="VsT-9X-zkj"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fW6-sm-t8g" secondAttribute="bottom" id="X3C-2n-qiw"/>
-                            <constraint firstAttribute="centerX" secondItem="v5a-2l-qvB" secondAttribute="centerX" id="XZH-TI-mlc"/>
-                            <constraint firstAttribute="centerX" secondItem="rSl-zs-C7Z" secondAttribute="centerX" id="byo-kl-5Ts"/>
                             <constraint firstAttribute="centerX" secondItem="fW6-sm-t8g" secondAttribute="centerX" id="eai-hx-KLM"/>
                             <constraint firstItem="mEa-Xq-QB6" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="j6h-Zi-1LS"/>
                             <constraint firstAttribute="centerX" secondItem="mEa-Xq-QB6" secondAttribute="centerX" id="oP9-VY-fG7"/>
                             <constraint firstItem="xap-Vb-CbA" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="10" id="pAa-mt-Iaf"/>
                             <constraint firstItem="uvx-n6-xp2" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="x61-hZ-WvW"/>
-                            <constraint firstItem="fW6-sm-t8g" firstAttribute="centerY" secondItem="v5a-2l-qvB" secondAttribute="centerY" id="zwb-N5-8xQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Mv9-vs-a2D"/>
                     <connections>
                         <outlet property="addButton" destination="fW6-sm-t8g" id="ikl-2M-eYC"/>
-                        <outlet property="largeButton" destination="v5a-2l-qvB" id="dvl-3k-q65"/>
                         <outlet property="maskImage" destination="JPp-1k-zdE" id="5Xq-AA-c2u"/>
                         <outlet property="meterContainerView" destination="mQX-uO-zkr" id="Xzc-Jh-LMx"/>
                         <outlet property="minusButton" destination="uvx-n6-xp2" id="Id3-s0-QqO"/>
                         <outlet property="percentageLabel" destination="mEa-Xq-QB6" id="VWN-Gf-0ip"/>
-                        <outlet property="smallButton" destination="rSl-zs-C7Z" id="Eb6-qX-fT4"/>
                         <outlet property="starButton" destination="xap-Vb-CbA" id="RjA-tl-1Yo"/>
                     </connections>
                 </viewController>
@@ -854,12 +809,10 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
         <image name="calendar-icon" width="30" height="30"/>
         <image name="drink-icon" width="30" height="30"/>
         <image name="drop" width="300" height="300"/>
-        <image name="large-icon" width="40" height="40"/>
         <image name="minus-icon" width="24" height="24"/>
         <image name="plus-icon" width="40" height="40"/>
         <image name="sad" width="100" height="100"/>
         <image name="settings-icon" width="30" height="30"/>
-        <image name="small-icon" width="40" height="40"/>
         <image name="smile" width="100" height="100"/>
         <image name="star" width="50" height="50"/>
         <image name="tiny-add" width="20" height="20"/>

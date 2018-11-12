@@ -9,8 +9,6 @@ open class DrinkViewController: UIViewController, UIAlertViewDelegate, UIViewCon
 
   @IBOutlet open weak var percentageLabel: UICountingLabel!
   @IBOutlet open weak var addButton: UIButton!
-  @IBOutlet open weak var smallButton: UIButton!
-  @IBOutlet open weak var largeButton: UIButton!
   @IBOutlet open weak var minusButton: UIButton!
   @IBOutlet weak var starButton: UIButton!
   @IBOutlet weak var meterContainerView: UIView!
@@ -127,20 +125,11 @@ open class DrinkViewController: UIViewController, UIAlertViewDelegate, UIViewCon
   // MARK: - Actions
 
   @IBAction func addButtonAction(_ sender: UIButton) {
-    if (expanded) {
-      contractAddButton()
-    } else {
-      expandAddButton()
-    }
-  }
-
-  @IBAction open func selectionButtonAction(_ sender: UIButton) {
-    contractAddButton()
     Globals.showPopTipOnceForKey("UNDO_HINT", userDefaults: userDefaults,
                                  popTipText: NSLocalizedString("undo poptip", comment: ""),
                                  inView: view,
                                  fromFrame: minusButton.frame)
-    let portion = smallButton == sender ? Constants.Gulp.small.key() : Constants.Gulp.big.key()
+    let portion = Constants.Gulp.small.key()
     updateCurrentEntry(userDefaults.double(forKey: portion))
   }
 
