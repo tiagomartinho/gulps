@@ -33,7 +33,6 @@ class NotificationHelper {
       reminder.repeatInterval = NSCalendar.Unit.day
       reminder.alertBody = NSLocalizedString("notification text", comment: "")
       reminder.alertAction = "Ok"
-      reminder.soundName = "drop.caf"
       reminder.category = "GULP_CATEGORY"
 
       UIApplication.shared.scheduleLocalNotification(reminder)
@@ -54,17 +53,10 @@ class NotificationHelper {
     smallAction.isAuthenticationRequired = false
     smallAction.isDestructive = false
 
-    let bigAction = UIMutableUserNotificationAction()
-    bigAction.identifier = "BIG_ACTION"
-    bigAction.title = "Big Gulp"
-    bigAction.activationMode = .background
-    bigAction.isAuthenticationRequired = false
-    bigAction.isDestructive = false
-
     let gulpCategory = UIMutableUserNotificationCategory()
     gulpCategory.identifier = "GULP_CATEGORY"
-    gulpCategory.setActions([smallAction, bigAction], for: .default)
-    gulpCategory.setActions([smallAction, bigAction], for: .minimal)
+    gulpCategory.setActions([smallAction], for: .default)
+    gulpCategory.setActions([smallAction], for: .minimal)
 
     let categories = NSSet(object: gulpCategory) as! Set<UIUserNotificationCategory>
     let settings = UIUserNotificationSettings(types: [.alert, .sound], categories: categories)
