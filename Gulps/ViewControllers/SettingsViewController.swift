@@ -54,22 +54,8 @@ class SettingsViewController: UITableViewController, UIAlertViewDelegate, UIText
   }
 
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
     var actionSheet: AHKActionSheet?
-    if ((indexPath as NSIndexPath).section == 0 && (indexPath as NSIndexPath).row == 0) {
-      actionSheet = AHKActionSheet(title: NSLocalizedString("unit of measure title", comment: ""))
-      actionSheet?.addButton(withTitle: Constants.UnitsOfMeasure.liters.nameForUnitOfMeasure(), type: .default) { _ in
-        self.userDefaults.set(Constants.UnitsOfMeasure.liters.rawValue, forKey: Constants.General.unitOfMeasure.key())
-        self.userDefaults.synchronize()
-        self.updateUI()
-      }
-      actionSheet?.addButton(withTitle: Constants.UnitsOfMeasure.ounces.nameForUnitOfMeasure(), type: .default) { _ in
-        self.userDefaults.set(Constants.UnitsOfMeasure.ounces.rawValue, forKey: Constants.General.unitOfMeasure.key())
-        self.userDefaults.synchronize()
-        self.updateUI()
-      }
-    }
-    if ((indexPath as NSIndexPath).section == 2 && (indexPath as NSIndexPath).row == 1) {
+    if ((indexPath as NSIndexPath).section == 1 && (indexPath as NSIndexPath).row == 1) {
       actionSheet = AHKActionSheet(title: NSLocalizedString("from:", comment: ""))
       for index in 5...22 {
         actionSheet?.addButton(withTitle: "\(index):00", type: .default) { _ in
@@ -77,7 +63,7 @@ class SettingsViewController: UITableViewController, UIAlertViewDelegate, UIText
         }
       }
     }
-    if ((indexPath as NSIndexPath).section == 2 && (indexPath as NSIndexPath).row == 2) {
+    if ((indexPath as NSIndexPath).section == 1 && (indexPath as NSIndexPath).row == 2) {
       actionSheet = AHKActionSheet(title: NSLocalizedString("to:", comment: ""))
       let upper = self.userDefaults.integer(forKey: Constants.Notification.from.key()) + 1
       for index in upper...24 {
@@ -86,7 +72,7 @@ class SettingsViewController: UITableViewController, UIAlertViewDelegate, UIText
         }
       }
     }
-    if ((indexPath as NSIndexPath).section == 2 && (indexPath as NSIndexPath).row == 3) {
+    if ((indexPath as NSIndexPath).section == 1 && (indexPath as NSIndexPath).row == 3) {
       actionSheet = AHKActionSheet(title: NSLocalizedString("every:", comment: ""))
       for index in 1...8 {
         let hour = index > 1 ? NSLocalizedString("hours", comment: "") : NSLocalizedString("hour", comment: "")
@@ -107,15 +93,6 @@ class SettingsViewController: UITableViewController, UIAlertViewDelegate, UIText
 
   override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 44
-  }
-
-  @IBAction func healthAction(_ sender: UISwitch) {
-    userDefaults.set(sender.isOn, forKey: Constants.Health.on.key())
-    userDefaults.synchronize()
-    self.tableView.reloadData()
-    if sender.isOn {
-      HealthKitHelper.sharedHelper.askPermission()
-    }
   }
 
   @IBAction func reminderAction(_ sender: UISwitch) {
