@@ -134,13 +134,13 @@ extension DrinkViewController {
     }
 
     let left = POPBasicAnimation(propertyNamed: kPOPLayerTranslationX)
-    left?.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+    left?.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
     left?.fromValue = -100
     left?.toValue = 0
     smallButton.layer.pop_add(left, forKey: "left")
 
     let right = POPBasicAnimation(propertyNamed: kPOPLayerTranslationX)
-    right?.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+    right?.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
     right?.fromValue = 100
     right?.toValue = 0
     largeButton.layer.pop_add(right, forKey: "right")

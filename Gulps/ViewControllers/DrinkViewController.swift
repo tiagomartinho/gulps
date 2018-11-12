@@ -49,7 +49,7 @@ open class DrinkViewController: UIViewController, UIAlertViewDelegate, UIViewCon
       self.updateUI()
     }
 
-    NotificationCenter.default.addObserver(self, selector: #selector(DrinkViewController.updateUI), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(DrinkViewController.updateUI), name: UIApplication.didBecomeActiveNotification, object: nil)
   }
 
   open override var prefersStatusBarHidden: Bool {

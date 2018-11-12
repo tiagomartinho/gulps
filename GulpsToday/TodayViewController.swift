@@ -42,7 +42,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
   }
 
   func widgetMarginInsets(forProposedMarginInsets defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
-    return UIEdgeInsetsMake(0, 0, 0, 0)
+    return UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
   }
 
   func updateUI() {
@@ -69,8 +69,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
   func confirmAction() {
     smallConfirmButton.backgroundColor = (gulpSize == .small) ? .palette_confirm : .palette_destructive
     bigConfirmButton.backgroundColor = (gulpSize == .big) ? .palette_confirm : .palette_destructive
-    smallConfirmButton.setImage(UIImage(named: (gulpSize == .small) ? "tiny-check" : "tiny-x"), for: UIControlState())
-    bigConfirmButton.setImage(UIImage(named: (gulpSize == .big) ? "tiny-check" : "tiny-x"), for: UIControlState())
+    smallConfirmButton.setImage(UIImage(named: (gulpSize == .small) ? "tiny-check" : "tiny-x"), for: UIControl.State())
+    bigConfirmButton.setImage(UIImage(named: (gulpSize == .big) ? "tiny-check" : "tiny-x"), for: UIControl.State())
     smallLabel.text = (gulpSize == .small) ? NSLocalizedString("confirm", comment: "") : NSLocalizedString("never mind", comment: "")
     bigLabel.text = (gulpSize == .small) ? NSLocalizedString("never mind", comment: "") : NSLocalizedString("confirm", comment: "")
     showConfirmButtons()

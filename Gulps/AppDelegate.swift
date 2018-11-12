@@ -8,7 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
   var realmNotification: RLMNotificationToken?
   let watchConnectivityHelper = WatchConnectivityHelper()
 
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
     setupAppearance()
     Settings.registerDefaults()
@@ -51,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
     UITabBar.appearance().tintColor = .palette_main
 
     if let font = UIFont(name: "KaushanScript-Regular", size: 22) {
-      UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.font: font, NSAttributedStringKey.foregroundColor: UIColor.white]
+      UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font: font, NSAttributedString.Key.foregroundColor: UIColor.white]
     }
 
     UINavigationBar.appearance().barTintColor = .palette_main

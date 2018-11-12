@@ -22,8 +22,8 @@ class GulpsViewController: OnboardingViewController, UITextFieldDelegate {
     self.smallBackgroundView.addGestureRecognizer(UITapGestureRecognizer(target: self.smallGulpText, action: #selector(UIResponder.becomeFirstResponder)))
     self.bigBackgroundView.addGestureRecognizer(UITapGestureRecognizer(target: self.bigGulpText, action: #selector(UIResponder.becomeFirstResponder)))
 
-    NotificationCenter.default.addObserver(self, selector: #selector(GulpsViewController.keyboardWillShow(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-    NotificationCenter.default.addObserver(self, selector: #selector(GulpsViewController.keyboardWillHide(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(GulpsViewController.keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(GulpsViewController.keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
   }
 
   @objc func dismissAndSave() {

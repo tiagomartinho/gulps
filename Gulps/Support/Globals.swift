@@ -9,7 +9,7 @@ class Globals {
 
     let button = UIBarButtonItem(title: "Ok", style: .done, target: target, action: selector)
     if let font = UIFont(name: "Avenir-Book", size: 16) {
-      button.setTitleTextAttributes([NSAttributedStringKey.font: font, NSAttributedStringKey.foregroundColor: textColor], for: UIControlState())
+      button.setTitleTextAttributes([NSAttributedString.Key.font: font, NSAttributedString.Key.foregroundColor: textColor], for: UIControl.State())
     }
     numberToolbar.items = [UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil), button]
     numberToolbar.sizeToFit()
@@ -24,10 +24,10 @@ class Globals {
     AHKActionSheet.appearance().separatorColor = UIColor(white: 1, alpha: 0.3)
     AHKActionSheet.appearance().blurTintColor = .palette_main
     if let font = UIFont(name: "Avenir-Book", size: 16) {
-      AHKActionSheet.appearance().buttonTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: font]
-      AHKActionSheet.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: font]
-      AHKActionSheet.appearance().buttonTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: font]
-      AHKActionSheet.appearance().cancelButtonTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: font]
+      AHKActionSheet.appearance().buttonTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: font]
+      AHKActionSheet.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: font]
+      AHKActionSheet.appearance().buttonTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: font]
+      AHKActionSheet.appearance().cancelButtonTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: font]
       if #available(iOS 11.0, *) {
         let bottomInset = UIApplication.shared.delegate?.window??.safeAreaInsets.bottom ?? 0.0
         AHKActionSheet.appearance().cancelButtonHeight = 44.0 + bottomInset

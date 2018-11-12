@@ -34,14 +34,14 @@ extension CalendarAnimation {
       calendarConstraint.pop_add(slideIn, forKey: "slideAway")
 
       var slideAway = POPBasicAnimation(propertyNamed: kPOPLayoutConstraintConstant)
-      slideAway?.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+      slideAway?.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
       slideAway?.fromValue = shareButtonConstraint.constant
       slideAway?.toValue = view.frame.size.height
       slideAway?.removedOnCompletion = true
       shareButtonConstraint.pop_add(slideAway, forKey: "slideInButton")
 
       slideAway = POPBasicAnimation(propertyNamed: kPOPLayoutConstraintConstant)
-      slideAway?.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+      slideAway?.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
       slideAway?.fromValue = quantityLabelConstraint.constant
       slideAway?.toValue = view.frame.size.height
       slideAway?.removedOnCompletion = true
@@ -49,7 +49,7 @@ extension CalendarAnimation {
       quantityLabelConstraint.pop_add(slideAway, forKey: "slideInQuantity")
 
       slideAway = POPBasicAnimation(propertyNamed: kPOPLayoutConstraintConstant)
-      slideAway?.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+      slideAway?.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
       slideAway?.fromValue = daysLabelConstraint.constant
       slideAway?.toValue = view.frame.size.height
       slideAway?.removedOnCompletion = true
@@ -62,7 +62,7 @@ extension CalendarAnimation {
       }
     } else {
       let slideAway = POPBasicAnimation(propertyNamed: kPOPLayoutConstraintConstant)
-      slideAway?.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+      slideAway?.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
       slideAway?.fromValue = calendarConstraint.constant
       slideAway?.toValue = -view.frame.size.height
       slideAway?.removedOnCompletion = true

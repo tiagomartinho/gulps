@@ -75,7 +75,7 @@ class AnimatedShareButton: UIButton {
       layer?.strokeColor = UIColor.white.cgColor
       layer?.lineWidth = strokeWidth
       layer?.miterLimit = strokeWidth
-      layer?.lineCap = kCALineCapRound
+      layer?.lineCap = CAShapeLayerLineCap.round
       layer?.masksToBounds = true
 
       let strokingPath = CGPath(__byStroking: (layer?.path!)!, transform: nil, lineWidth: strokeWidth, lineCap: CGLineCap.round, lineJoin: CGLineJoin.miter, miterLimit: strokeWidth)

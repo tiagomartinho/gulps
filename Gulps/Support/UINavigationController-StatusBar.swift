@@ -9,7 +9,7 @@ extension UINavigationController {
     return .lightContent
   }
 
-  open override var childViewControllerForStatusBarHidden : UIViewController? {
+  open override var childForStatusBarHidden : UIViewController? {
     return self.topViewController
   }
 }

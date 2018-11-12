@@ -41,8 +41,8 @@ class CalendarViewController: UIViewController {
   var animating = false
   
   let shareExclusions = [
-    UIActivityType.airDrop, UIActivityType.assignToContact, UIActivityType.addToReadingList,
-    UIActivityType.print, UIActivityType.postToWeibo, UIActivityType.postToVimeo, UIActivityType.postToTencentWeibo
+    UIActivity.ActivityType.airDrop, UIActivity.ActivityType.assignToContact, UIActivity.ActivityType.addToReadingList,
+    UIActivity.ActivityType.print, UIActivity.ActivityType.postToWeibo, UIActivity.ActivityType.postToVimeo, UIActivity.ActivityType.postToTencentWeibo
   ]
   
   override func viewDidLoad() {
