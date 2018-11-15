@@ -41,7 +41,7 @@ class CalendarViewController: UIViewController {
     
     dailyLabel.text = ""
     [daysCountLabel, quantityLabel].forEach { $0.format = "%d" }
-    [quantityLabel, daysLabel, daysCountLabel, measureLabel].forEach { $0.textColor = .palette_main }
+    [monthLabel, dailyLabel, quantityLabel, daysLabel, daysCountLabel, measureLabel].forEach { $0.textColor = .palette_main }
     shareButton.backgroundColor = .palette_main
     
     self.navigationItem.rightBarButtonItem = {
