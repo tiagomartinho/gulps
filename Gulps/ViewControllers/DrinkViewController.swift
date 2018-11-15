@@ -120,6 +120,16 @@ open class DrinkViewController: UIViewController, UIAlertViewDelegate, UIViewCon
   // MARK: - Actions
 
   @IBAction func addButtonAction(_ sender: UIButton) {
+    let exerciseVC = ExerciseViewController()
+    let navigationVC = UINavigationController(rootViewController: exerciseVC)
+    if #available(iOS 11.0, *) {
+      navigationVC.navigationBar.prefersLargeTitles = true
+      navigationVC.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+    }
+    present(navigationVC, animated: true, completion: nil)
+  }
+
+  private func addExercise() {
     Globals.showPopTipOnceForKey("UNDO_HINT", userDefaults: userDefaults,
                                  popTipText: NSLocalizedString("undo poptip", comment: ""),
                                  inView: view,
