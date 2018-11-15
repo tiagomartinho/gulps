@@ -81,7 +81,7 @@ open class DrinkViewController: UIViewController, UIAlertViewDelegate, UIViewCon
       updateUI()
     }
 
-    // Ask (just once) the user for feedback once he's logged more than 10 liters/ounces
+    // Ask (just once) the user for feedback once he's logged more than 10 exercises
     if !userDefaults.bool(forKey: "FEEDBACK") {
       if EntryHandler.sharedHandler.overallQuantity() > 10 {
         animateStarButton()
