@@ -18,7 +18,6 @@ open class DrinkViewController: UIViewController, UIAlertViewDelegate, UIViewCon
   var realmNotification: RLMNotificationToken?
   var expanded = false
   let transition = BubbleTransition()
-  let manager = CMMotionManager()
 
   // MARK: - Life cycle
 
@@ -34,15 +33,6 @@ open class DrinkViewController: UIViewController, UIAlertViewDelegate, UIViewCon
     percentageLabel.textColor = Palette.palette_main
 
     addButton.backgroundColor = Palette.palette_main
-    manager.accelerometerUpdateInterval = 0.01
-    manager.deviceMotionUpdateInterval = 0.01;
-    manager.startDeviceMotionUpdates(to: OperationQueue.main) {
-      (motion, error) in
-      if let motion = motion {
-        let roation = atan2(motion.gravity.x, motion.gravity.y) - Double.pi
-        self.progressMeter?.transform = CGAffineTransform(rotationAngle: CGFloat(roation))
-      }
-    }
 
     realmNotification = EntryHandler.sharedHandler.realm.observe { note, realm in
       self.updateUI()
@@ -67,11 +57,11 @@ open class DrinkViewController: UIViewController, UIAlertViewDelegate, UIViewCon
     // Init the progress meter programamtically to avoid an animation glitch
     if progressMeter == nil {
       let width = meterContainerView.frame.size.width
-      progressMeter = BAFluidView(frame: CGRect(x: 0, y: 0, width: width, height: width), maxAmplitude: 40, minAmplitude: 8, amplitudeIncrement: 1)
+      progressMeter = BAFluidView(frame: CGRect(x: 0, y: 0, width: width, height: width), maxAmplitude: 12, minAmplitude: 8, amplitudeIncrement: 1)
       progressMeter!.backgroundColor = .clear
       progressMeter!.fillColor = .palette_main
       progressMeter!.fillAutoReverse = false
-      progressMeter!.fillDuration = 1.5
+      progressMeter!.fillDuration = 2.5
       progressMeter!.fillRepeatCount = 0;
       progressMeter?.tintColor = .palette_main
       progressMeter?.strokeColor = .palette_main
