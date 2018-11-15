@@ -111,7 +111,7 @@
 		655BE8C71BF6558E003232A8 /* UINavigationController-StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController-StatusBar.swift"; sourceTree = "<group>"; };
 		6591D8C51AF2684A0069E198 /* DrinkViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkViewControllerTests.swift; sourceTree = "<group>"; };
 		65E94C6B1BBC13B400A65B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		65F44C1B1AF24B440093A3E9 /* Gulps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gulps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F44C1B1AF24B440093A3E9 /* TMJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F44C1F1AF24B440093A3E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65F44C201AF24B440093A3E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65F44C251AF24B440093A3E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -257,7 +257,7 @@
 		65F44C1C1AF24B440093A3E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65F44C1B1AF24B440093A3E9 /* Gulps.app */,
+				65F44C1B1AF24B440093A3E9 /* TMJ.app */,
 				654764B41AF267D100C68C2A /* GulpsTests.xctest */,
 			);
 			name = Products;
@@ -354,7 +354,7 @@
 			);
 			name = Gulps;
 			productName = Gulps;
-			productReference = 65F44C1B1AF24B440093A3E9 /* Gulps.app */;
+			productReference = 65F44C1B1AF24B440093A3E9 /* TMJ.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -369,13 +369,13 @@
 				TargetAttributes = {
 					654764B31AF267D100C68C2A = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = H72GR44F4M;
+						DevelopmentTeam = 4C34FT6ABU;
 						LastSwiftMigration = 1010;
 						TestTargetID = 65F44C1A1AF24B440093A3E9;
 					};
 					65F44C1A1AF24B440093A3E9 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = H72GR44F4M;
+						DevelopmentTeam = 4C34FT6ABU;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -643,7 +643,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = H72GR44F4M;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -659,7 +659,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "it.fancypixel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gulps.app/Gulps";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMJ.app/TMJ";
 			};
 			name = Debug;
 		};
@@ -669,7 +669,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = H72GR44F4M;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -681,7 +681,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "it.fancypixel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gulps.app/Gulps";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMJ.app/TMJ";
 			};
 			name = Release;
 		};
@@ -800,7 +800,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = H72GR44F4M;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -809,8 +809,8 @@
 				INFOPLIST_FILE = Gulps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = it.fancypixel.BigGulp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.tmj;
+				PRODUCT_NAME = TMJ;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -825,7 +825,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = H72GR44F4M;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -834,8 +834,8 @@
 				INFOPLIST_FILE = Gulps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = it.fancypixel.BigGulp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.tmj;
+				PRODUCT_NAME = TMJ;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
