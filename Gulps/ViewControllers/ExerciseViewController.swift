@@ -2,6 +2,13 @@ import UIKit
 
 class ExerciseViewController: UIViewController {
 
+  var completeExerciseHandler: (() -> (Void))?
+
+  convenience init(completeExerciseHandler: @escaping (() -> (Void))) {
+    self.init()
+    self.completeExerciseHandler = completeExerciseHandler
+  }
+
   private let completeButton: RoundedButton = {
     let button = RoundedButton(buttonColor: Palette.palette_main)
     button.setTitle("Mark as completed", for: .normal)
@@ -35,5 +42,6 @@ class ExerciseViewController: UIViewController {
   }
 
   @objc func completedExercises() {
+    dismiss(animated: true, completion: completeExerciseHandler)
   }
 }

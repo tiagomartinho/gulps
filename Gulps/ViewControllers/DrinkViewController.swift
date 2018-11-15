@@ -120,7 +120,7 @@ open class DrinkViewController: UIViewController, UIAlertViewDelegate, UIViewCon
   // MARK: - Actions
 
   @IBAction func addButtonAction(_ sender: UIButton) {
-    let exerciseVC = ExerciseViewController()
+    let exerciseVC = ExerciseViewController(completeExerciseHandler: addExercise)
     let navigationVC = UINavigationController(rootViewController: exerciseVC)
     if #available(iOS 11.0, *) {
       navigationVC.navigationBar.prefersLargeTitles = true
