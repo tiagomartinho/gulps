@@ -21,6 +21,10 @@ class ExerciseViewController: UIViewController {
     super.viewDidLoad()
     title = "Exercises"
     navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(dismissView))
+    addCompleteButton()
+  }
+
+  private func addCompleteButton() {
     view.addSubview(completeButton)
     completeButton.translatesAutoresizingMaskIntoConstraints = false
     let item: Any
