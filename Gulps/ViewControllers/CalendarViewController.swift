@@ -20,7 +20,7 @@ class CalendarViewController: UIViewController {
   @IBOutlet weak var measureLabel: UILabel!
   @IBOutlet weak var daysLabel: UILabel!
   @IBOutlet weak var shareButton: UIButton!
-    
+
   var quantityLabelStartingConstant = 0.0
   var daysLabelStartingConstant = 0.0
   var shareButtonStartingConstant = 0.0
@@ -158,6 +158,7 @@ extension CalendarViewController: CVCalendarViewDelegate, CVCalendarMenuViewDele
 extension CalendarViewController {
   func setupCalendar() {
     calendarMenu.menuViewDelegate = self
+    calendarMenu.backgroundColor = .white
     calendarContent.calendarDelegate = self
     calendarContent.calendarAppearanceDelegate = self
 
