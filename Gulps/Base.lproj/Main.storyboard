@@ -17,7 +17,7 @@
         <!--Drink View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="DrinkViewController" customModule="Gulps" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="DrinkViewController" customModule="TMJ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -27,23 +27,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQX-uO-zkr">
-                                <rect key="frame" x="50" y="20" width="275" height="275"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drop" translatesAutoresizingMaskIntoConstraints="NO" id="JPp-1k-zdE">
-                                        <rect key="frame" x="0.0" y="0.0" width="275" height="275"/>
-                                    </imageView>
-                                </subviews>
+                                <rect key="frame" x="50" y="58" width="275" height="275"/>
                                 <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="JPp-1k-zdE" firstAttribute="top" secondItem="mQX-uO-zkr" secondAttribute="top" id="Giv-Uf-qPF"/>
-                                    <constraint firstAttribute="bottom" secondItem="JPp-1k-zdE" secondAttribute="bottom" id="KIj-wg-Gwd"/>
                                     <constraint firstAttribute="width" secondItem="mQX-uO-zkr" secondAttribute="height" multiplier="1:1" id="KfC-cY-eVr"/>
-                                    <constraint firstAttribute="trailing" secondItem="JPp-1k-zdE" secondAttribute="trailing" id="M6n-rq-Jqd"/>
-                                    <constraint firstItem="JPp-1k-zdE" firstAttribute="leading" secondItem="mQX-uO-zkr" secondAttribute="leading" id="RUG-Nj-0J9"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEa-Xq-QB6" customClass="UICountingLabel">
-                                <rect key="frame" x="16" y="325" width="343" height="42"/>
+                                <rect key="frame" x="16" y="363" width="343" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="BaT-Nj-R8l"/>
                                 </constraints>
@@ -107,9 +98,9 @@
                             <constraint firstItem="mEa-Xq-QB6" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="5Kw-Si-2x9"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="fW6-sm-t8g" secondAttribute="bottom" priority="999" constant="30" id="6mW-Ks-Okm"/>
                             <constraint firstAttribute="trailing" secondItem="mQX-uO-zkr" secondAttribute="trailing" constant="50" id="7kZ-5Y-T7k"/>
-                            <constraint firstItem="mQX-uO-zkr" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="20" id="I7T-On-xnd"/>
                             <constraint firstAttribute="trailing" secondItem="uvx-n6-xp2" secondAttribute="trailing" constant="8" id="RFk-Vg-f7U"/>
                             <constraint firstItem="mEa-Xq-QB6" firstAttribute="top" secondItem="mQX-uO-zkr" secondAttribute="bottom" priority="999" constant="30" id="RhO-7v-9ug"/>
+                            <constraint firstItem="mQX-uO-zkr" firstAttribute="top" secondItem="uvx-n6-xp2" secondAttribute="top" constant="50" id="TNF-zC-NPb"/>
                             <constraint firstItem="mEa-Xq-QB6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="mQX-uO-zkr" secondAttribute="bottom" id="TZU-e2-bDA"/>
                             <constraint firstItem="mQX-uO-zkr" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="50" id="VsT-9X-zkj"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fW6-sm-t8g" secondAttribute="bottom" id="X3C-2n-qiw"/>
@@ -123,7 +114,6 @@
                     <navigationItem key="navigationItem" id="Mv9-vs-a2D"/>
                     <connections>
                         <outlet property="addButton" destination="fW6-sm-t8g" id="ikl-2M-eYC"/>
-                        <outlet property="maskImage" destination="JPp-1k-zdE" id="5Xq-AA-c2u"/>
                         <outlet property="meterContainerView" destination="mQX-uO-zkr" id="Xzc-Jh-LMx"/>
                         <outlet property="minusButton" destination="uvx-n6-xp2" id="Id3-s0-QqO"/>
                         <outlet property="percentageLabel" destination="mEa-Xq-QB6" id="VWN-Gf-0ip"/>
@@ -138,7 +128,7 @@
         <!--Feedback View Controller-->
         <scene sceneID="SYy-UA-vxC">
             <objects>
-                <viewController id="cZe-iA-KWC" customClass="FeedbackViewController" customModule="Gulps" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cZe-iA-KWC" customClass="FeedbackViewController" customModule="TMJ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="02q-er-mJO"/>
                         <viewControllerLayoutGuide type="bottom" id="xIr-rX-acu"/>
@@ -203,7 +193,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
         <!--Feedback View Controller-->
         <scene sceneID="8V4-Ch-Z4J">
             <objects>
-                <viewController id="JON-j6-9hc" customClass="FeedbackViewController" customModule="Gulps" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JON-j6-9hc" customClass="FeedbackViewController" customModule="TMJ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X0v-tl-qBf"/>
                         <viewControllerLayoutGuide type="bottom" id="QzQ-Ja-tSd"/>
@@ -295,7 +285,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
         <!--Feedback View Controller-->
         <scene sceneID="fAg-H6-Cxt">
             <objects>
-                <viewController id="gZI-Lm-las" customClass="FeedbackViewController" customModule="Gulps" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gZI-Lm-las" customClass="FeedbackViewController" customModule="TMJ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vuw-Om-KPk"/>
                         <viewControllerLayoutGuide type="bottom" id="G8G-yX-NGY"/>
@@ -425,7 +415,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
         <!--Calendar View Controller-->
         <scene sceneID="X3R-mt-gca">
             <objects>
-                <viewController id="BxV-3X-jF2" customClass="CalendarViewController" customModule="Gulps" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BxV-3X-jF2" customClass="CalendarViewController" customModule="TMJ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Gy-oT-4T2"/>
                         <viewControllerLayoutGuide type="bottom" id="Ju8-He-qx5"/>
@@ -598,7 +588,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
         <!--Settings View Controller-->
         <scene sceneID="f6s-sH-ozk">
             <objects>
-                <tableViewController id="t9K-A9-XHF" customClass="SettingsViewController" customModule="Gulps" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="t9K-A9-XHF" customClass="SettingsViewController" customModule="TMJ" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="LmZ-Eo-HR4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -808,7 +798,6 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
     <resources>
         <image name="calendar-icon" width="30" height="30"/>
         <image name="drink-icon" width="30" height="30"/>
-        <image name="drop" width="300" height="300"/>
         <image name="minus-icon" width="24" height="24"/>
         <image name="plus-icon" width="40" height="40"/>
         <image name="sad" width="100" height="100"/>

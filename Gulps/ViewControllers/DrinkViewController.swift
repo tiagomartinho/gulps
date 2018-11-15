@@ -12,7 +12,6 @@ open class DrinkViewController: UIViewController, UIAlertViewDelegate, UIViewCon
   @IBOutlet open weak var minusButton: UIButton!
   @IBOutlet weak var starButton: UIButton!
   @IBOutlet weak var meterContainerView: UIView!
-  @IBOutlet weak var maskImage: UIImageView!
 
   open var userDefaults = UserDefaults.groupUserDefaults()
   open var progressMeter: BAFluidView?
@@ -74,8 +73,9 @@ open class DrinkViewController: UIViewController, UIAlertViewDelegate, UIViewCon
       progressMeter!.fillRepeatCount = 0;
       progressMeter?.tintColor = .palette_main
       progressMeter?.strokeColor = .palette_main
-      meterContainerView.insertSubview(progressMeter!, belowSubview: maskImage)
-
+      meterContainerView.addSubview(progressMeter!)
+      meterContainerView.layer.cornerRadius = 25
+      meterContainerView.backgroundColor = Palette.palette_lightGray.withAlphaComponent(0.25)
       updateUI()
     }
 
