@@ -28,7 +28,7 @@ extension CalendarAnimation {
       slideIn?.springBounciness = 5
       slideIn?.springSpeed = 8
       slideIn?.fromValue = calendarConstraint.constant
-      slideIn?.toValue = 0
+      slideIn?.toValue = 40
       slideIn?.removedOnCompletion = true
       slideIn?.beginTime = CACurrentMediaTime() + 0.35
       calendarConstraint.pop_add(slideIn, forKey: "slideAway")

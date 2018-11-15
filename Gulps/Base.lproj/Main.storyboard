@@ -430,21 +430,21 @@ By the way, we’d love some feedback! How do you feel about the app? </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6kF-sJ-gnc" customClass="CVCalendarMenuView" customModule="CVCalendar">
-                                <rect key="frame" x="0.0" y="30" width="375" height="30"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="30"/>
                                 <color key="backgroundColor" red="0.96687578914141414" green="0.96687578914141414" blue="0.96687578914141414" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="u4k-S9-CBs"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gz-XS-2c7" customClass="CVCalendarView" customModule="CVCalendar">
-                                <rect key="frame" x="0.0" y="60" width="375" height="300"/>
+                                <rect key="frame" x="0.0" y="100" width="375" height="300"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="38h-4O-5tL"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nja-Uo-jJw">
-                                <rect key="frame" x="16" y="368" width="343" height="40"/>
+                                <rect key="frame" x="16" y="408" width="343" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="2t4-Qt-d7J"/>
                                 </constraints>
@@ -497,7 +497,7 @@ By the way, we’d love some feedback! How do you feel about the app? </string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W59-Vd-725">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="40" width="375" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="fbQ-Yo-f5D"/>
                                 </constraints>
@@ -516,7 +516,7 @@ By the way, we’d love some feedback! How do you feel about the app? </string>
                             <constraint firstItem="4E2-NO-CiF" firstAttribute="top" secondItem="lon-Jb-3Cm" secondAttribute="bottom" id="FBc-uZ-Wzf"/>
                             <constraint firstItem="3gz-XS-2c7" firstAttribute="top" secondItem="6kF-sJ-gnc" secondAttribute="bottom" id="Nfh-yh-JXo"/>
                             <constraint firstAttribute="trailing" secondItem="xk6-tX-JQH" secondAttribute="trailing" constant="16" id="RFp-sV-jZE"/>
-                            <constraint firstItem="W59-Vd-725" firstAttribute="top" secondItem="7Gy-oT-4T2" secondAttribute="bottom" id="S3K-pu-Gkp"/>
+                            <constraint firstItem="W59-Vd-725" firstAttribute="top" secondItem="7Gy-oT-4T2" secondAttribute="bottom" constant="40" id="S3K-pu-Gkp"/>
                             <constraint firstItem="W59-Vd-725" firstAttribute="leading" secondItem="qyp-gc-0kQ" secondAttribute="leading" id="SeQ-DU-Mce"/>
                             <constraint firstAttribute="trailing" secondItem="4E2-NO-CiF" secondAttribute="trailing" constant="16" id="TlK-nq-QTC"/>
                             <constraint firstItem="Nja-Uo-jJw" firstAttribute="trailing" secondItem="qyp-gc-0kQ" secondAttribute="trailingMargin" id="Yda-cw-XgW"/>
