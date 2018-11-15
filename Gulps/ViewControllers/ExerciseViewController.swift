@@ -42,6 +42,11 @@ class ExerciseViewController: UIViewController {
     let leading = NSLayoutConstraint(item: tableView, attribute: .leading, relatedBy: .equal, toItem: item, attribute: .leading, multiplier: 1, constant: 12)
     let constraints = [top, bottom, trailing, leading]
     NSLayoutConstraint.activate(constraints)
+    let tableViewController = ExercisesTableViewController()
+    addChild(tableViewController)
+    tableViewController.view.frame = tableView.frame
+    tableView.addSubview(tableViewController.view)
+    tableViewController.didMove(toParent: self)
   }
 
   private func addCompleteButton() {
