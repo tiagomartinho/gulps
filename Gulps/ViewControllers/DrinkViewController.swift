@@ -72,6 +72,8 @@ open class DrinkViewController: UIViewController, UIAlertViewDelegate, UIViewCon
       progressMeter!.fillAutoReverse = false
       progressMeter!.fillDuration = 1.5
       progressMeter!.fillRepeatCount = 0;
+      progressMeter?.tintColor = .palette_main
+      progressMeter?.strokeColor = .palette_main
       meterContainerView.insertSubview(progressMeter!, belowSubview: maskImage)
 
       updateUI()
