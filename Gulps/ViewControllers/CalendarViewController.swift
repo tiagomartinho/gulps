@@ -20,9 +20,7 @@ class CalendarViewController: UIViewController {
   @IBOutlet weak var measureLabel: UILabel!
   @IBOutlet weak var daysLabel: UILabel!
   @IBOutlet weak var shareButton: UIButton!
-  
-  @IBOutlet weak var addButton: UIButton!
-  
+    
   var quantityLabelStartingConstant = 0.0
   var daysLabelStartingConstant = 0.0
   var shareButtonStartingConstant = 0.0
@@ -43,7 +41,7 @@ class CalendarViewController: UIViewController {
     [daysCountLabel, quantityLabel].forEach { $0.format = "%d" }
     [monthLabel, dailyLabel, quantityLabel, daysLabel, daysCountLabel, measureLabel].forEach { $0.textColor = .palette_main }
     shareButton.backgroundColor = .palette_main
-    
+
     self.navigationItem.rightBarButtonItem = {
       let animatedButton = AnimatedShareButton(frame: CGRect(x: 0, y: 0, width: 22, height: 22))
       animatedButton.addTarget(self, action: #selector(CalendarViewController.presentStats(_:)), for: .touchUpInside)
