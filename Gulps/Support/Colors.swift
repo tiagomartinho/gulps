@@ -2,23 +2,24 @@ import UIKit
 
 typealias Palette = UIColor
 extension Palette {
+
   class var palette_main: UIColor {
-    return UIColor(red:0.22, green:0.49, blue:0.81, alpha:1)
+    return #colorLiteral(red: 0.1803921569, green: 0.8, blue: 0.4431372549, alpha: 1)
   }
 
   class var palette_yellow: UIColor {
-    return UIColor(red: 245.0/255.0, green: 192.0/255.0, blue: 24.0/255.0, alpha: 1)
+    return #colorLiteral(red: 0.9450980392, green: 0.768627451, blue: 0.05882352941, alpha: 1)
   }
 
   class var palette_confirm: UIColor {
-    return UIColor(red:0.6, green:0.8, blue:0.37, alpha:1)
+    return #colorLiteral(red: 0.2039215686, green: 0.5960784314, blue: 0.8588235294, alpha: 1)
   }
 
   class var palette_destructive: UIColor {
-    return UIColor(red:0.75, green:0.22, blue:0.17, alpha:1)
+    return #colorLiteral(red: 0.9058823529, green: 0.2980392157, blue: 0.2352941176, alpha: 1)
   }
 
   class var palette_lightGray: UIColor {
-    return UIColor(red:0.91, green:0.91, blue:0.92, alpha:1)
+    return #colorLiteral(red: 0.7411764706, green: 0.7647058824, blue: 0.7803921569, alpha: 1)
   }
 }
