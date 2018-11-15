@@ -34,7 +34,6 @@ open class DrinkViewController: UIViewController, UIAlertViewDelegate, UIViewCon
     percentageLabel.textColor = Palette.palette_main
 
     addButton.backgroundColor = Palette.palette_main
-    
     manager.accelerometerUpdateInterval = 0.01
     manager.deviceMotionUpdateInterval = 0.01;
     manager.startDeviceMotionUpdates(to: OperationQueue.main) {
