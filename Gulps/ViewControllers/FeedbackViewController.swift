@@ -23,7 +23,8 @@ class FeedbackViewController: UIViewController {
 
   @IBAction func reviewAction() {
     self.dismiss(animated: true) {
-      UIApplication.shared.openURL(URL(string: "itms-apps://itunes.apple.com/app/id979057304")!)
+      // TODO: ADD ID
+      UIApplication.shared.openURL(URL(string: "itms-apps://itunes.apple.com/app/id")!)
     }
   }
 
@@ -33,7 +34,7 @@ class FeedbackViewController: UIViewController {
 
   @IBAction func contactAction() {
     self.dismiss(animated: true) {
-      UIApplication.shared.openURL(URL(string: "mailto:gulps@fancypixel.it")!)
+      UIApplication.shared.openURL(URL(string: "mailto:t.martinho@live.com.pt")!)
     }
   }
 }

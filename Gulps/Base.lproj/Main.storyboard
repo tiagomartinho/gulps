@@ -146,7 +146,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2X-D7-DBk">
                                 <rect key="frame" x="16" y="106" width="343" height="66"/>
                                 <string key="text">Good job keeping healthy! 
-By the way, we’d love some feedback! How do you feel about Gulps? </string>
+By the way, we’d love some feedback! How do you feel about the app? </string>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -208,7 +208,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How about rating Gulps on the AppStore? We always appreciate the feedback!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9l-6a-fbg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How about rating us on the AppStore? We always appreciate the feedback!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9l-6a-fbg">
                                 <rect key="frame" x="16" y="146" width="343" height="44"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -280,7 +280,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LRM-gP-bOv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3398.4000000000001" y="-877.9610194902549"/>
+            <point key="canvasLocation" x="3415" y="-992"/>
         </scene>
         <!--Feedback View Controller-->
         <scene sceneID="fAg-H6-Cxt">
@@ -339,7 +339,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                     <action selector="contactAction" destination="gZI-Lm-las" eventType="touchUpInside" id="wRz-kY-oiu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry to hear that! Is there any way we can improve your experience with Gulps? Contact us, we'd love your feedback!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upP-xB-nVY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry to hear that! Is there any way we can improve your experience? Contact us, we'd love your feedback!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upP-xB-nVY">
                                 <rect key="frame" x="16" y="50" width="343" height="66"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -368,7 +368,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Mh-cU-OP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3398.4000000000001" y="-288.75562218890559"/>
+            <point key="canvasLocation" x="3468" y="-289"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
