@@ -453,7 +453,7 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
                                 <color key="textColor" red="0.17367905378341675" green="0.40215393900871277" blue="0.76835298538208008" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liters drank over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4E2-NO-CiF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="exercises" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4E2-NO-CiF">
                                 <rect key="frame" x="16" y="115" width="343" height="20"/>
                                 <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="17"/>
                                 <color key="textColor" red="0.17367905378341675" green="0.40215393900871277" blue="0.76835298538208008" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -561,11 +561,11 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
             </objects>
             <point key="canvasLocation" x="1332" y="-0.44977511244377816"/>
         </scene>
-        <!--My progress-->
+        <!--Progress-->
         <scene sceneID="Yb4-kZ-eAj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WfU-rs-EHU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My progress" image="calendar-icon" id="1AV-yg-enX"/>
+                    <tabBarItem key="tabBarItem" title="Progress" image="calendar-icon" id="1AV-yg-enX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" largeTitles="YES" id="Oty-Lr-Na6">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
@@ -761,11 +761,11 @@ By the way, we’d love some feedback! How do you feel about Gulps? </string>
             </objects>
             <point key="canvasLocation" x="1332.8" y="645.87706146926541"/>
         </scene>
-        <!--Preferences-->
+        <!--Settings-->
         <scene sceneID="N6A-EL-ShQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4GP-uQ-whB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Preferences" image="settings-icon" id="BBe-Kb-DPg"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings-icon" id="BBe-Kb-DPg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" largeTitles="YES" id="zxx-GC-h7k">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
