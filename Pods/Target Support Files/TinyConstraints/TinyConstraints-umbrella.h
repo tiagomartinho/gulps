@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_GulpsTodayVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_GulpsTodayVersionString[];
+FOUNDATION_EXPORT double TinyConstraintsVersionNumber;
+FOUNDATION_EXPORT const unsigned char TinyConstraintsVersionString[];
 

@@ -29,6 +29,7 @@ PODS:
   - RealmSwift (3.11.1):
     - Realm (= 3.11.1)
   - Reveal-SDK (19)
+  - TinyConstraints (3.3.1)
   - UICountingLabel (1.4.1)
 
 DEPENDENCIES:
@@ -45,6 +46,7 @@ DEPENDENCIES:
   - Quick
   - RealmSwift
   - Reveal-SDK
+  - TinyConstraints
   - UICountingLabel (~> 1.2)
 
 SPEC REPOS:
@@ -64,6 +66,7 @@ SPEC REPOS:
     - Realm
     - RealmSwift
     - Reveal-SDK
+    - TinyConstraints
     - UICountingLabel
 
 SPEC CHECKSUMS:
@@ -82,8 +85,9 @@ SPEC CHECKSUMS:
   Realm: 037c5919b9ceb59d6beed5d3b031096856b119b3
   RealmSwift: c9580133e73ef40ed340401af2dbc9a5790dfea7
   Reveal-SDK: 9f0d2c6c12eb7507921e5454ac165b7aa21140a4
+  TinyConstraints: dbf7519aefc01ea59d62244300c7718aec68e280
   UICountingLabel: faf890b505d96312e324a86718f031fafffb0ccb
 
-PODFILE CHECKSUM: dcfe721514b02ede29cf1bcac966ad46f6b3135c
+PODFILE CHECKSUM: d8415fcfb10aed3adf15fa89456d91760cb1437d
 
 COCOAPODS: 1.5.3

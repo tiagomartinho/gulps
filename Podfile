@@ -13,6 +13,7 @@ def common_pods
   pod 'CVCalendar'
   pod 'BAFluidView', '~> 0.2.3'
   pod 'BubbleTransition', '~> 2.0.0'
+  pod 'TinyConstraints'
 end
 
 target 'Gulps' do
