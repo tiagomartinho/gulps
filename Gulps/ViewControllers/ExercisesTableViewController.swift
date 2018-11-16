@@ -5,6 +5,8 @@ class ExercisesTableViewController: UITableViewController {
 
   let reuseIdentifier = "ExercisesTableViewCell"
 
+  let exercises = ExerciseList.exercises
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     tableView.allowsSelection = false
@@ -12,13 +14,13 @@ class ExercisesTableViewController: UITableViewController {
   }
 
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 10
+    return exercises.count
   }
 
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let dequeuedCell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier) as? ExercisesTableViewCell
     let cell = dequeuedCell ?? ExercisesTableViewCell(style: .default, reuseIdentifier: reuseIdentifier)
-    cell.exercise = Exercise(title: "Goldfish", description: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", imageBefore: UIImage(named: "open")!, imageAfter: UIImage(named: "closed")!)
+    cell.exercise = exercises[indexPath.row]
     return cell
   }
 }

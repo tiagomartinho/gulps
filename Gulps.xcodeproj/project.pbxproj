@@ -13,6 +13,7 @@
 		24BF12B8219DC2A100E2DA55 /* ExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF12B7219DC2A100E2DA55 /* ExercisesTableViewController.swift */; };
 		24D2BE4C219F4696005DC61D /* ExercisesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D2BE4B219F4696005DC61D /* ExercisesTableViewCell.swift */; };
 		24D2BE4E219F46AE005DC61D /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D2BE4D219F46AE005DC61D /* Exercise.swift */; };
+		24D2BE50219F4761005DC61D /* ExerciseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D2BE4F219F4761005DC61D /* ExerciseList.swift */; };
 		24F59D3C219A1F1100C9A24D /* CalendarViewController+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F59D3B219A1F1100C9A24D /* CalendarViewController+Animations.swift */; };
 		650DCE651AF3CD4100E12764 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650DCE641AF3CD4100E12764 /* Constants.swift */; };
 		6537A8291AF24CC800EC16E9 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6537A8101AF24CC800EC16E9 /* Entry.swift */; };
@@ -95,6 +96,7 @@
 		24BF12B7219DC2A100E2DA55 /* ExercisesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesTableViewController.swift; sourceTree = "<group>"; };
 		24D2BE4B219F4696005DC61D /* ExercisesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesTableViewCell.swift; sourceTree = "<group>"; };
 		24D2BE4D219F46AE005DC61D /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		24D2BE4F219F4761005DC61D /* ExerciseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseList.swift; sourceTree = "<group>"; };
 		24F59D3B219A1F1100C9A24D /* CalendarViewController+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CalendarViewController+Animations.swift"; sourceTree = "<group>"; };
 		58E28A47EF2AA14E880CD719 /* Pods_GulpsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GulpsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		650DCE641AF3CD4100E12764 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				24BF12B7219DC2A100E2DA55 /* ExercisesTableViewController.swift */,
 				24D2BE4B219F4696005DC61D /* ExercisesTableViewCell.swift */,
 				24D2BE4D219F46AE005DC61D /* Exercise.swift */,
+				24D2BE4F219F4761005DC61D /* ExerciseList.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -602,6 +605,7 @@
 				24BF12B4219DBA3F00E2DA55 /* ExerciseViewController.swift in Sources */,
 				6537A8331AF24CC800EC16E9 /* Settings.swift in Sources */,
 				6537A8371AF24CC800EC16E9 /* GoalViewController.swift in Sources */,
+				24D2BE50219F4761005DC61D /* ExerciseList.swift in Sources */,
 				24D2BE4E219F46AE005DC61D /* Exercise.swift in Sources */,
 				6537A82A1AF24CC800EC16E9 /* EntryHandler.swift in Sources */,
 				65F44C211AF24B440093A3E9 /* AppDelegate.swift in Sources */,
