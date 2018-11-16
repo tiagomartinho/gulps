@@ -71,6 +71,7 @@ class ExercisesTableViewController: UITableViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    tableView.allowsSelection = false
     tableView.register(ExercisesTableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
   }
 
