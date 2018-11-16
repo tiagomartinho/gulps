@@ -36,8 +36,8 @@ class ExerciseViewController: UIViewController {
     } else {
       item = view
     }
-    let top = NSLayoutConstraint(item: tableView, attribute: .top, relatedBy: .equal, toItem: item, attribute: .top, multiplier: 1, constant: 12)
-    let bottom = NSLayoutConstraint(item: tableView, attribute: .bottom, relatedBy: .equal, toItem: completeButton, attribute: .top, multiplier: 1, constant: -12)
+    let top = NSLayoutConstraint(item: tableView, attribute: .top, relatedBy: .equal, toItem: item, attribute: .top, multiplier: 1, constant: 0)
+    let bottom = NSLayoutConstraint(item: tableView, attribute: .bottom, relatedBy: .equal, toItem: completeButton, attribute: .top, multiplier: 1, constant: 0)
     let trailing = NSLayoutConstraint(item: tableView, attribute: .trailing, relatedBy: .equal, toItem: item, attribute: .trailing, multiplier: 1, constant: -12)
     let leading = NSLayoutConstraint(item: tableView, attribute: .leading, relatedBy: .equal, toItem: item, attribute: .leading, multiplier: 1, constant: 12)
     let constraints = [top, bottom, trailing, leading]
