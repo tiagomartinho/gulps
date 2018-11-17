@@ -23,8 +23,7 @@ class FeedbackViewController: UIViewController {
 
   @IBAction func reviewAction() {
     self.dismiss(animated: true) {
-      // TODO: ADD ID
-      UIApplication.shared.openURL(URL(string: "itms-apps://itunes.apple.com/app/id")!)
+      UIApplication.shared.openURL(URL(string: "itms-apps://itunes.apple.com/app/id1442931229")!)
     }
   }
 
