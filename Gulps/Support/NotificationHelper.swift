@@ -46,18 +46,8 @@ class NotificationHelper {
   }
 
   class func askPermission() {
-    let smallAction = UIMutableUserNotificationAction()
-    smallAction.identifier = "SMALL_ACTION"
-    smallAction.title = "Small Gulp"
-    smallAction.activationMode = .background
-    smallAction.isAuthenticationRequired = false
-    smallAction.isDestructive = false
-
     let gulpCategory = UIMutableUserNotificationCategory()
     gulpCategory.identifier = "GULP_CATEGORY"
-    gulpCategory.setActions([smallAction], for: .default)
-    gulpCategory.setActions([smallAction], for: .minimal)
-
     let categories = NSSet(object: gulpCategory) as! Set<UIUserNotificationCategory>
     let settings = UIUserNotificationSettings(types: [.alert, .sound], categories: categories)
     UIApplication.shared.registerUserNotificationSettings(settings)
